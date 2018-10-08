@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:id="@+id/run_layout">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"/>
+        <TextView
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/distance_run"
+            android:layout_below="@id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7.72"
+            android:textColor="@color/red"
+            android:textSize="50sp"/>
+        <TextView
+            android:id="@+id/text_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="60dp"
+            android:paddingLeft="3dp"
+            android:layout_toRightOf="@id/distance_run"
+            android:layout_toEndOf="@id/distance_run"
+            android:textSize="20sp"
+            android:textColor="@color/red"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:id="@+id/right_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:paddingTop="12dp"
+            android:orientation="horizontal"
+            android:id="@+id/icons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:src="@mipmap/sun"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:src="@mipmap/smiley"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:src="@mipmap/highway"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:src="@mipmap/number"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="6dp"
+            android:layout_below="@id/icons_layout"
+            android:orientation="horizontal"
+            android:id="@+id/pace_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:paddingRight="2dp"
+                    android:paddingEnd="2dp"
+                    android:id="@+id/clock"
+                    android:src="@mipmap/clock"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+                <TextView
+                    android:layout_toEndOf="@id/clock"
+                    android:layout_toRightOf="@id/clock"
+                    android:id="@+id/pace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pace"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/clock_midnight"
+                    android:src="@mipmap/clock_midnight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_toEndOf="@id/clock_midnight"
+                    android:layout_toRightOf="@id/clock_midnight"
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="time"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

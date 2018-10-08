@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:weightSum="4">
+
+    <TextView
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:id="@+id/month"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Month"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:paddingRight="2dp"
+            android:paddingEnd="2dp"
+            android:contentDescription="square"
+            android:id="@+id/square"
+            android:src="@mipmap/square"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:layout_toRightOf="@id/square"
+            android:layout_toEndOf="@id/square"
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:paddingRight="2dp"
+            android:paddingEnd="2dp"
+            android:id="@+id/clock"
+            android:src="@mipmap/clock"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:layout_toRightOf="@id/clock"
+            android:layout_toEndOf="@id/clock"
+            android:id="@+id/pace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pace"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:paddingRight="2dp"
+            android:paddingEnd="2dp"
+            android:id="@+id/nike_fuel_icon"
+            android:src="@mipmap/nike_fuel"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:layout_toRightOf="@id/nike_fuel_icon"
+            android:layout_toEndOf="@id/nike_fuel_icon"
+            android:id="@+id/nike_fuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NikeFuel"/>
+    </RelativeLayout>
+</LinearLayout>

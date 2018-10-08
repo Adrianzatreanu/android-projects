@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Bulls and Cows</string>
+    <string name="start_name">START</string>
+    <string name="rules">Hey, to play this game you will need to insert numbers and guess
+    the number I set. To give you hints, after each try, I will tell you how many digits
+    you got right on the right position (Bulls, shown with B) and how many you got right but
+    on wrong position (Cows, shown with C).\n\n
+    Example: If secret number is 520 and you try 502, you will get 1 bull (for digit 5) and 2 cows
+    (you guessed 0 and 2, but got them on the wrong positions).\n\n
+    Good luck and press Start to begin!</string>
+    <string name="enter_number">Enter your number here!</string>
+    <string name="number_here">Here will be shown your hint.</string>
+    <string name="last_number">"No last number yet!"</string>
+    <string name="showMeTheHint">"Show me the answer!"</string>
+    <string name="tryNumber">Try the number!</string>
+    <string name="concede">"You have surrendered in the face of evil!"</string>
+    <string name="retry">"Go back and try again</string>
+    <string name="afterClickText">
+        You have come here to try your luck again? Press start if so, mortal.</string>
+    <string name="playAgain">Play again?</string>
+    <string name="guessed">Number guessed.</string>
+    <string name="name">Enter your name!</string>
+    <string name="confirmName">Confirm name</string>
+    <string name="easy">EASY</string>
+    <string name="normal">NORMAL</string>
+    <string name="hard">HARD</string>
+    <string name="highScores">Scores</string>
+</resources>
